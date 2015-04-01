@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--This file executes the operations needed to build this screen. It lays the general outline for the entire app, which height and width to use,
+	the general images, etc. Some of the images is clickable, as buttons, and is styled with CSS (through application.css) -->
+<!-- Created By Gaute Gjerløw Remen -->
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Button?>
+
+<Pane maxHeight="500" maxWidth="500.0" minHeight="500" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.uib.gre002.info233.v2015.oblig2.gui.controllers.StartScreenController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="500.0">
+         <image>
+            <Image url="@images/uib_01.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="200.0" layoutX="145.0" layoutY="14.0" opacity="0.54">
+         <image>
+            <Image url="@images/uib-logo.png" />
+         </image>
+         <effect>
+            <Reflection fraction="0.54" topOpacity="0.19" />
+         </effect>
+      </ImageView>
+      <ImageView id="buttonStyling" fitHeight="20" fitWidth="20" layoutX="470.0" layoutY="10.0" onMouseClicked="#handleExitButtonEvent">
+         <image>
+         		<Image url="@images/cross.png" />
+         </image>
+      </ImageView>
+      <ImageView id="buttonStyling" fx:id="strtArw_1" fitHeight="50" fitWidth="50" layoutX="225.0" layoutY="300" onMouseClicked="#handleNextPageEvent">
+         <image>
+         		<Image url="@images/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView id="buttonStyling" fitHeight="20" fitWidth="20" layoutX="10.0" layoutY="10.0" onMouseClicked="#handleLoadButtonEvent">
+         <image>
+                <Image url="@images/loadfile.png" />
+         </image>
+      </ImageView>
+      <Label id="romsjekker" alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="200.0" opacity="0.88" prefHeight="101.0" prefWidth="259.0" text="Romsjekkeren" textFill="#d7d7d7">
+         <font>
+            <Font size="31.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Label>
+      <Text fill="WHITE" layoutX="140.0" layoutY="483.0" opacity="0.78" strokeType="OUTSIDE" strokeWidth="0.0" text="   Anders Eide og Gaute Gjerløw Remen" wrappingWidth="268.6829261779785">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <effect>
+            <Reflection bottomOpacity="0.05" fraction="0.58" topOpacity="0.18" />
+         </effect>
+      </Text>
+   </children>
+   <stylesheets>
+   <URL value="@application.css" />
+   </stylesheets>
+</Pane>

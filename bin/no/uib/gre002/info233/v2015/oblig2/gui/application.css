@@ -1,0 +1,32 @@
+.root {
+	-fx-background-image: url("uib.jpg");
+}
+
+.logo {
+	-fx-image: url("/images/uib_logo.jpg");
+}
+
+#romsjekker {
+	-fx-font-size: 32px;
+    -fx-font-family: "Arial Black";
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.7), 6,0.0,0,2);
+}
+
+#buttonStyling {
+	-fx-opacity: 0.3;
+}
+
+#buttonStyling:hover {
+	-fx-opacity: 0.7;
+}
+
+#topLabelCalender {
+	-fx-font-size: 16px;
+	-fx-font-family: "Tahoma";
+	-fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.7), 6,0.0,0,2);
+}
+
+
+.table-view .column-header-background .label {  
+ -fx-font-size: 9pt;  
+}  

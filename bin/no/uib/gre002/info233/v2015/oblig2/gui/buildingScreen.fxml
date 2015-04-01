@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--This file executes the operations needed to build this screen. In addition to the last screen (startScreen.fxml) , a combobox is added to handle 
+	the buildings at UIB. The operation is based on choosing a building and going to the roomScreen.fxml -->
+	
+<!-- Created By Gaute Gjerløw Remen -->
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Button?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.ComboBox?>
+
+
+<Pane maxHeight="500" maxWidth="500.0" minHeight="500" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.uib.gre002.info233.v2015.oblig2.gui.controllers.BuildingScreenController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="500.0">
+         <image>
+            <Image url="@images/uib_02.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="200.0" layoutX="145.0" layoutY="14.0" opacity="0.54">
+         <image>
+            <Image url="@images/uib-logo.png" />
+         </image>
+         <effect>
+            <Reflection fraction="0.54" topOpacity="0.19" />
+         </effect>
+      </ImageView>
+      <ImageView id="buttonStyling" fitHeight="20" fitWidth="20" layoutX="470.0" layoutY="10.0" onMouseClicked="#handleExitButtonEvent">
+         <image>
+         		<Image url="@images/cross.png" />
+         </image>
+      </ImageView>
+      <ImageView id="buttonStyling" fitHeight="20" fitWidth="20" layoutX="10.0" layoutY="10.0" onMouseClicked="#handleHomeButtonEvent">
+         <image>
+         		<Image url="@images/home.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="buildingCombo" layoutX="100.0" layoutY="150.0" prefHeight="27.0" prefWidth="300.0" promptText="Vennligst velg bygg:">
+      		<items>
+      		<FXCollections fx:factory="observableArrayList">
+      			<String fx:value="test"/>
+      		</FXCollections>
+      		</items>
+      </ComboBox>
+      <ImageView id="buttonStyling" fx:id="rmArw_1" disable="true" fitHeight="50" fitWidth="50" layoutX="225.0" layoutY="300" onMouseClicked="#handleNextPageEvent">
+      		<Image url="@images/arrow.png"/>
+      </ImageView>
+   </children>
+   <stylesheets>
+   <URL value="@application.css" />
+   </stylesheets>
+</Pane>
